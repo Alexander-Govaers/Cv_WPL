@@ -1,0 +1,737 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+
+    a:link {
+        text-decoration: none;
+    }
+
+}
+
+
+.top_banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4fr 1fr;
+    width: 100%;
+    height: 80vh;
+    background-image: url("./Assets/Alexander Govaers.svg");
+    background-size: cover;
+
+
+
+    .intro {
+        display: grid;
+        grid-area: 1 / 2;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        margin-right: 10%;
+        padding-top: 15%;
+
+
+        .welcome {
+            font-size: 80px;
+            color: #020202;
+            text-align: center;
+            line-height: 50px;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+
+
+            span {
+                color: white;
+                font-size: 50px;
+                font-family: "Dosis", sans-serif;
+
+
+            }
+
+        }
+
+        .p-intro {
+            color: #fff;
+            padding-bottom: 38px;
+            padding-top: 38px;
+            line-height: 35px;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+            font-weight: normal;
+
+        }
+
+        .social-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+
+        .social-buttons a:hover {
+
+            background: black;
+            fill: #115e75;
+            transition: 0.3s;
+            transform: translateY(-10px);
+
+
+        }
+
+
+        .social-buttons a {
+            background: white;
+            padding: 10px;
+            border-radius: 40%;
+            height: 50px;
+            width: 50px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        }
+
+    }
+
+    .picture-alexander {
+        grid-row: 1 / 2;
+        text-align: center;
+        align-self: center;
+        height: 60%;
+        width: 100%;
+        position: relative;
+
+
+        .picture {
+            width: 50%;
+            transition: transform 0.8s ease, box-shadow 0.8s ease;
+            border-radius: 100%;
+
+        }
+
+        .picture:hover {
+            filter: drop-shadow(5px 5px 15px #10929e);
+            transform: scale(1.05);
+            border-radius: 100%;
+
+        }
+
+        .picture:active {
+            filter: drop-shadow(5px 5px 15px black);
+        }
+
+
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 6vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation {
+    display: flex;
+
+
+    & ul {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 50px;
+        font-size: 20px;
+    }
+
+    & li a {
+        display: flex;
+        color: white;
+        transition: all 0.2s ease-in-out;
+        font-size: 22px;
+    }
+
+    & li a:hover {
+        color: #10929e;
+    }
+}
+
+.container-about-me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.h2-titel {
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 8px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 40px;
+
+}
+
+.p-tekst {
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.h2-titel::after {
+    content: "";
+    position: absolute;
+    left: 47.5%;
+    bottom: 8px;
+    width: 80px;
+    height: 8px;
+    transform: skew(-30deg) translateX(-30%);
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(24, 137, 147) 97%, rgb(16, 146, 158) 100%);
+    z-index: -1;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3%;
+}
+
+
+.it-skills {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    grid-column: 1;
+
+
+}
+
+.it-skills h2 {
+
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+
+.bar {
+    width: 60%;
+    height: 10px;
+    border-radius: 3px;
+    background: #888888;
+    grid-column: 1;
+}
+
+.bar div {
+    height: 10px;
+    border-radius: 3px;
+    width: 1%;
+
+
+}
+
+.bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 80%;
+    float: right;
+    margin-right: -1%;
+    margin-top: -15px;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #10929EFF;
+    font-weight: bold;
+    background: white;
+}
+
+.html {
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
+    animation: html 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+.css {
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
+    animation: css 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+.c-sharp {
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
+    animation: c-sharp 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+.sql {
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
+    animation: sql 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+@keyframes html {
+    100% {
+        width: 30%
+    }
+}
+
+@keyframes css {
+    100% {
+        width: 30%
+    }
+}
+
+@keyframes c-sharp {
+    100% {
+        width: 30%
+    }
+}
+
+@keyframes sql {
+    100% {
+        width: 30%
+    }
+}
+
+.other-skills {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    grid-column: 2;
+
+}
+
+.other-skills h2 {
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+
+.bar-right {
+    width: 60%;
+    height: 10px;
+    border-radius: 3px;
+    background: #888888;
+
+
+}
+
+.bar-right div {
+    height: 10px;
+    border-radius: 3px;
+    width: 1%;
+}
+
+.bar-right div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 80%;
+    float: right;
+    margin-right: -1%;
+    margin-top: -15px;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #10929EFF;
+    font-weight: bold;
+    background: white;
+}
+
+.management {
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
+    animation: management 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+.hr {
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
+    animation: hr 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+.sales {
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
+    animation: sales 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+.digital-marketing {
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
+    animation: digital-marketing 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+@keyframes management {
+    100% {
+        width: 86%
+    }
+}
+
+@keyframes hr {
+    100% {
+        width: 83%
+    }
+}
+
+@keyframes sales {
+    100% {
+        width: 81%
+    }
+}
+
+@keyframes digital-marketing {
+    100% {
+        width: 76%
+    }
+}
+
+.talen {
+    display: grid;
+    grid-template:
+        "titel titel" 15%
+        "skills stars" 90% / 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+
+
+
+    & h4{
+        grid-area: titel;
+        font-size: 20px;
+        margin-right: 20%;
+    }
+
+    & .lijst_talen{
+        grid-area: skills;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+    & .star_images{
+        grid-area: stars;
+        padding-bottom: 20px;
+
+    }
+
+
+ul li {
+
+    list-style: none;
+
+
+}
+
+.star_images img {
+    width: 20%;
+    display: flex;
+    margin-left: 10px;
+
+}
+
+
+.title_studies {
+    text-align: center;
+    padding: 20px 20px 8px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 6%;
+    font-size: 30px;
+    background: rgba(138, 138, 142, 0.2);
+}
+
+.title_studies::after {
+    content: "";
+    position: absolute;
+    left: 47.5%;
+    bottom: 10px;
+    width: 80px;
+    height: 8px;
+    transform: skew(-30deg) translateX(-30%);
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(24, 137, 147) 97%, rgb(16, 146, 158) 100%);
+    z-index: -1;
+
+}
+
+
+.studies {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    width: 100%;
+    height: 94vh;
+    line-height: 66px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgba(138, 138, 142, 0.2) 39%, rgba(255, 255, 255, 1) 100%);
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+
+}
+
+.tabel_studies {
+    width: 50%;
+    border-collapse: collapse;
+
+
+}
+
+tr {
+    width: 35%;
+
+}
+
+th {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 30%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+td {
+    text-align: center;
+
+
+}
+
+img {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 30px;
+
+}
+
+table tr:nth-child(odd) {
+
+    font-style: normal;
+
+}
+
+table tr:nth-child(even) {
+    background: linear-gradient(90deg, rgba(138, 138, 142, 0.0) 10%, rgb(255, 255, 255) 60%, rgba(138, 138, 142, 0.0) 100%);
+    font-style: italic;
+}
+
+.title_ervaring {
+    text-align: center;
+    padding: 20px 20px 8px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+
+
+}
+.title_ervaring:after {
+    content: "";
+    position: absolute;
+    left: 47.5%;
+    bottom: 10px;
+    width: 80px;
+    height: 8px;
+    transform: skew(-30deg) translateX(-30%);
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(24, 137, 147) 97%, rgb(16, 146, 158) 100%);
+    z-index: -1;
+}
+
+.ervaring_tijdlijn{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 46px;
+    width: 100%;
+    height: 94vh;
+    margin-top: 100px;
+}
+
+
+
+.tijdlijn {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 4px solid #10749e;
+    padding-left: 40px;
+    max-width: 600px;
+    width: 50%;
+
+
+}
+
+
+.tijdlijn li {
+     background: #ffffff;
+     padding: 10px 15px;
+     border-radius: 8px;
+     box-shadow: 0 4px 6px rgba(60, 115, 124, 0.73);
+     position: relative;
+}
+.tijdlijn li:hover{
+
+    background: #171616;
+    transition: 0.3s;
+    transform: translateY(-8px);
+
+}
+.tijdlijn li:hover h5{
+
+    transition: 0.3s;
+    transform: translateY(-8px);
+    color: #10749e;
+}
+
+
+
+.tijdlijn li:hover p{
+
+    transition: box-shadow 0.5s ease;
+    transform: translateY(-10px);
+    color: white;
+}
+
+
+
+.tijdlijn li::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background: #10749e;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.39);
+    position: absolute;
+    left: -50px;
+    top: 14px;
+}
+
+.tijdlijn h5 {
+    font-size: 20px;
+    color: #2c3e50;
+    text-align: right;
+    display: flex;
+
+}
+
+.tijdlijn p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    max-width: 45%;
+    margin: 1px;
+
+
+}
+
+.slides {
+    display: flex;
+    animation: slideAnimation 40s infinite; /* doorschuiven */
+    align-items: center;
+}
+
+.bedrijf {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.bedrijf img {
+
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0); /* Eerste afbeelding in zicht */
+    }
+    12.5% {
+        transform: translateX(0); /* Eerste afbeelding blijft zichtbaar */
+    }
+    25% {
+        transform: translateX(-100%); /* Tweede afbeelding komt in zicht */
+    }
+    37.5% {
+        transform: translateX(-200%); /* Derde afbeelding komt in zicht */
+    }
+    50% {
+        transform: translateX(-300%); /* Vierde afbeelding komt in zicht */
+    }
+    62.5% {
+        transform: translateX(-400%); /* Vijfde afbeelding komt in zicht */
+    }
+    75% {
+        transform: translateX(-500%); /* Zesde afbeelding komt in zicht */
+    }
+    87.5% {
+        transform: translateX(-600%); /* Zevende afbeelding komt in zicht */
+    }
+    100% {
+        transform: translateX(-700%); /* Achtste afbeelding komt in zicht */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
