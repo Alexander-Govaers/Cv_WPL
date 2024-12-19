@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>AlexanderGovaers</title>
     <link rel="stylesheet" href="CV.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
         </div>
 
         <div class="intro">
-        <h1 class="welcome">Welcome to <br><span>my page</span></h1>
+        <h1 class="welcome">Welkom</h1>
             <p class="p-intro" >Laat me mijzelf kort voorstellen.<br> Mijn naam is Alexander Govaers en ik ben gepassioneerd door de wereld van tech en IT. <br> Mijn doel? Een steentje bijdragen voor het digitaliseren van de wereld. <br>Mijn motto? Streef niet enkel naar het creëren van oplossingen maar maak het verschil met het werk dat je verricht!</p>
 <div class="social-buttons">
     <a  href="https://www.facebook.com/AlexGovaerss/">
@@ -51,7 +52,7 @@
                 <li  id="sectie2"><a href="#sectie2">Introductie</a></li>
                 <li><a href="#sectie3">Studies</a></li>
                 <li><a href="#sectie4">Ervaring</a></li>
-                <li><a href="#sectie5">Mijn hobby's</a></li>
+                <li><a href="#sectie5">Contact</a></li>
                 <li><a href="#sectie6">Portfolio</a></li>
 
             </ul>
@@ -60,7 +61,7 @@
 
 <article  class="container-about-me">
 
-    <h2  class="h2-titel">About me</h2>
+    <h2  class="h2-titel">Over mijzelf</h2>
     <p class="p-tekst">Ik kan mijzelf het beste beschrijven als leergierig, communicatief persoon die er niet van afschrikt om de leiding te nemen. <br> Daarnaast ben ik loyaal, gemotiveerd en een echte duizendpoot die altijd openstaat voor een uitdaging. <br> Hieronder kan je een korte samenvatting terugvinden van mijn skills die ik doorheen mijn carrière heb opgedaan. <br> Waar ik deze skills heb verworven kom je te weten in mijn werkervaringen.</p>
 
 </article>
@@ -201,7 +202,7 @@
             <td>
                 PXL
             </td>
-            <td  id = "sectie4">
+            <td  >
                 ...
             </td>
         </tr>
@@ -209,9 +210,9 @@
 
 </article>
 
-    <h3 class="title_ervaring">Ervaring</h3>
+    <h3 id = "sectie4" class="title_ervaring">Ervaring</h3>
 
-<article class="ervaring_tijdlijn">
+<article  class="ervaring_tijdlijn">
 
 
 
@@ -247,33 +248,33 @@
     <div class="slider-container">
         <div class="slides">
             <div class="bedrijf">
-                <img src="../Cv_WPL_final/Assets/3.png" alt="Image 1">
+                <img src="../Cv_WPL_final/Assets/HBC.png" alt="Image 1">
             </div>
             <div class="bedrijf">
-                <img src="../Cv_WPL_final/Assets/2.png" alt="Image 2">
+                <img src="../Cv_WPL_final/Assets/desigual.png" alt="Image 2">
             </div>
             <div class="bedrijf">
-               <img src="../Cv_WPL_final/Assets/1.png" alt="Image 3">
+               <img src="../Cv_WPL_final/Assets/spar.png" alt="Image 3">
 
             </div>
             <div class="bedrijf">
-                <img src="../Cv_WPL_final/Assets/4.png" alt="Image 4">
+                <img src="../Cv_WPL_final/Assets/Levis.png" alt="Image 4">
 
             </div>
             <div class="bedrijf">
-                <img src="../Cv_WPL_final/Assets/5.png" alt="Image 5">
+                <img src="../Cv_WPL_final/Assets/passionworks.png" alt="Image 5">
 
             </div>
             <div class="bedrijf">
-                <img src="../Cv_WPL_final/Assets/6.png" alt="Image 6">
+                <img src="../Cv_WPL_final/Assets/asclepia.png" alt="Image 6">
 
             </div>
             <div class="bedrijf">
-                <img src="../Cv_WPL_final/Assets/7%20.png" alt="Image 6">
+                <img src="../Cv_WPL_final/Assets/superdry.png" alt="Image 6">
 
             </div>
             <div class="bedrijf">
-                <img src="../Cv_WPL_final/Assets/3.png" alt="Image 7">
+                <img src="../Cv_WPL_final/Assets/HBC.png" alt="Image 7">
 
             </div>
         </div>
@@ -283,6 +284,47 @@
 
 
 
+<div class="contact-container">
+
+    <div id= "sectie5" class="contact">
+
+        <h3 class="contact_title">Contact</h3>
+
+    </div>
+
+    <video class="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="Assets/lastsection.mp4" type="video/mp4">
+    </video>
+
+    <article class="contact-formulier">
+
+        <div class="contact_gegevens">
+            <h3>Adres:</h3>
+            <p>Zestienhuizenstraat 39, 3530 Houthalen</p>
+            <h3>Contact:</h3>
+            <p>+32 487 57 28 34</p>
+            <h3>E-mail:</h3>
+            <p>alexander.govaers@outlook.com</p>
+        </div>
+
+        <div class="formulier">
+
+            <form class="formulier-velden" action="mailto:alexander.govaers@outlook.com?subject=Meer informatie over diensten:"
+                  enctype="text/plain" method="post">
+
+                <input type="text" id="naam" name="name" placeholder="Naam" required>
+                <input type="text" name="email" id = "email" placeholder="E-mail" required>
+                <input type="tel" name="tel" id="nummer" placeholder="Telefoonnummer" required>
+                <textarea name="comment" placeholder="Vraag" required></textarea>
+                <button class="verzendknop"  type="submit" >Verzenden</button>
+            </form>
+
+        </div>
+
+    </article>
+
+
+</div>
 
 </body>
 </html>

@@ -19,82 +19,80 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 4fr 1fr;
     width: 100%;
-    height: 80vh;
+    height: 94vh;
     background-image: url("./Assets/Alexander Govaers.svg");
     background-size: cover;
+}
 
+.intro {
+    display: grid;
+    grid-area: 1 / 2;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10%;
+    padding-top: 15%;
+}
 
+.welcome {
+    font-size: 84px;
+    color: #020202;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(40deg, rgb(255, 255, 255), rgb(16, 146, 158), rgb(255, 255, 255));
+    letter-spacing: 2px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 6s ease-in-out forwards;
 
-    .intro {
-        display: grid;
-        grid-area: 1 / 2;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-        margin-right: 10%;
-        padding-top: 15%;
+}
 
-
-        .welcome {
-            font-size: 80px;
-            color: #020202;
-            text-align: center;
-            line-height: 50px;
-            text-transform: uppercase;
-            font-family: "Montserrat", sans-serif;
-
-
-            span {
-                color: white;
-                font-size: 50px;
-                font-family: "Dosis", sans-serif;
-
-
-            }
-
-        }
-
-        .p-intro {
-            color: #fff;
-            padding-bottom: 38px;
-            padding-top: 38px;
-            line-height: 35px;
-            font-size: 20px;
-            text-align: center;
-            letter-spacing: 1px;
-            font-weight: normal;
-
-        }
-
-        .social-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: flex-start;
-
-        }
-
-        .social-buttons a:hover {
-
-            background: black;
-            fill: #115e75;
-            transition: 0.3s;
-            transform: translateY(-10px);
-
-
-        }
-
-
-        .social-buttons a {
-            background: white;
-            padding: 10px;
-            border-radius: 40%;
-            height: 50px;
-            width: 50px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-        }
-
+@keyframes shine {
+    0% {
+        background-position-x: -300%; /* start tekst */
     }
+    150% {
+        background-position-x: 0; /* eintekst */
+    }
+
+}
+
+.p-intro {
+    color: #fff;
+    padding-bottom: 38px;
+    padding-top: 38px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.social-buttons a:hover {
+    background: black;
+    fill: #115e75;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+
+.social-buttons a {
+    background: white;
+    padding: 10px;
+    border-radius: 40%;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
 
     .picture-alexander {
         grid-row: 1 / 2;
@@ -125,7 +123,7 @@
 
 
     }
-}
+
 
 .menu {
     display: flex;
@@ -134,7 +132,7 @@
     height: 6vh;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navigation {
@@ -191,7 +189,7 @@
 .h2-titel::after {
     content: "";
     position: absolute;
-    left: 47.5%;
+    left: 46.6%;
     bottom: 8px;
     width: 80px;
     height: 8px;
@@ -266,25 +264,25 @@
 .html {
     background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
     animation: html 2.5s linear forwards;
-    animation-delay: 4s;
+    animation-delay: 6s;
 }
 
 .css {
     background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
     animation: css 2.5s linear forwards;
-    animation-delay: 4s;
+    animation-delay: 6s;
 }
 
 .c-sharp {
     background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
     animation: c-sharp 2.5s linear forwards;
-    animation-delay: 4s;
+    animation-delay: 6s;
 }
 
 .sql {
     background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(16, 146, 158) 100%);
     animation: sql 2.5s linear forwards;
-    animation-delay: 4s;
+    animation-delay: 6s;
 }
 
 @keyframes html {
@@ -486,14 +484,13 @@ ul li {
     display: flex;
     justify-content: space-around;
     background: linear-gradient(180deg, rgba(138, 138, 142, 0.2) 39%, rgba(255, 255, 255, 1) 100%);
-    padding-top: 20px;
     padding-bottom: 50px;
 
 
 }
 
 .tabel_studies {
-    width: 50%;
+    width: 60%;
     border-collapse: collapse;
 
 
@@ -547,6 +544,8 @@ table tr:nth-child(even) {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     margin-top: 30px;
+    background: rgb(237, 233, 233);
+    z-index: 1;
 
 
 }
@@ -564,15 +563,14 @@ table tr:nth-child(even) {
 
 .ervaring_tijdlijn{
 
-
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 50px;
-    padding-top: 46px;
     width: 100%;
-    height: 94vh;
-    margin-top: 100px;
+    height: 100vh;
+    padding-top: 6%;
+    background: linear-gradient(180deg, rgb(237, 233, 233) 0.5%, rgba(255, 255, 255, 0.68) 60%, rgba(139, 138, 142, 0) 100%)
 }
 
 
@@ -586,7 +584,7 @@ table tr:nth-child(even) {
     padding-left: 40px;
     max-width: 600px;
     width: 50%;
-
+    margin-top: 6%;
 
 }
 
@@ -656,13 +654,13 @@ table tr:nth-child(even) {
     max-width: 45%;
     margin: 1px;
 
-
 }
 
 .slides {
     display: flex;
-    animation: slideAnimation 40s infinite; /* doorschuiven */
+    animation: slideAnimation 35s infinite; /* doorschuiven */
     align-items: center;
+
 }
 
 .bedrijf {
@@ -683,33 +681,203 @@ table tr:nth-child(even) {
 
 @keyframes slideAnimation {
     0% {
-        transform: translateX(0); /* Eerste afbeelding in zicht */
+        transform: translateX(0);
     }
     12.5% {
-        transform: translateX(0); /* Eerste afbeelding blijft zichtbaar */
+        transform: translateX(0);
     }
     25% {
-        transform: translateX(-100%); /* Tweede afbeelding komt in zicht */
+        transform: translateX(-100%);
     }
     37.5% {
-        transform: translateX(-200%); /* Derde afbeelding komt in zicht */
+        transform: translateX(-200%);
     }
     50% {
-        transform: translateX(-300%); /* Vierde afbeelding komt in zicht */
+        transform: translateX(-300%);
     }
     62.5% {
-        transform: translateX(-400%); /* Vijfde afbeelding komt in zicht */
+        transform: translateX(-400%);
     }
     75% {
-        transform: translateX(-500%); /* Zesde afbeelding komt in zicht */
+        transform: translateX(-500%);
     }
     87.5% {
-        transform: translateX(-600%); /* Zevende afbeelding komt in zicht */
+        transform: translateX(-600%);
     }
     100% {
-        transform: translateX(-700%); /* Achtste afbeelding komt in zicht */
+        transform: translateX(-700%);
     }
 }
+
+
+
+.contact-container {
+    height: 96vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 14%;
+
+}
+.background-video{
+    position: absolute;
+    object-fit: cover;
+    background-size: cover;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    position: relative;
+
+
+}
+.contact_title {
+    text-align: center;
+    padding: 20px 20px 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: white;
+    z-index: 0;
+    position: relative;
+    margin: 0;
+
+
+}
+
+.contact_title::after {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    left: 36%;
+    transform: translateX(-50%) skew(-30deg);
+    width: 80px;
+    height: 8px;
+    background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(24, 137, 147) 97%, rgb(16, 146, 158) 100%);
+    z-index: -1;
+
+}
+
+.contact-formulier{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    z-index: 1;
+    margin-top: 80px;
+
+
+
+}
+.contact_gegevens{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    height: 56%;
+    width: 25%;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+.formulier {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0.9;
+    height: 90%;
+    width: 50%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    align-items: flex-end;
+    border-radius: 10px;
+
+
+}
+.formulier-velden {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 90%;
+    font-family: "Montserrat", sans-serif;
+
+    & input{
+        width: 60%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+        color: white;
+
+
+        &::placeholder {
+            color: white;
+        }
+
+        & input:valid{
+            background: transparent;
+            color: white;
+
+            &input:focus{
+                background: transparent;
+            }
+        }
+
+    }
+
+    textarea {
+        background: #ffffff;
+        border: none;
+        padding: 10px;
+        height: 80%;
+        width: 90%;
+    }
+        textarea::placeholder {
+            color: black;
+        }
+
+        textarea:focus{
+            border: none;
+            outline: none;
+
+        }
+
+    .verzendknop {
+        width: 30%;
+        height: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+}
+
+
+
+
 
 
 
