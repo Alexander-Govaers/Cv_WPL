@@ -1107,7 +1107,7 @@ table tr:nth-child(even) {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: flex-end; /* Zorg dat de items links beginnen */
+            align-items: flex-end;
             padding-left: 120px;
             margin: 13px;
             font-size: 14px;
