@@ -480,7 +480,9 @@ ul li {
 
 }
 
-
+.studies-media{
+    display: none;
+}
 .studies {
     font-family: "Montserrat", sans-serif;
     color: black;
@@ -973,7 +975,7 @@ table tr:nth-child(even) {
     .p-intro {
         padding: 4px;
         margin: 20px;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 21px;
     }
 
@@ -992,6 +994,9 @@ table tr:nth-child(even) {
 
     .menu {
         height: 6vh;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
 
         .navigation{
             display: flex;
@@ -1018,9 +1023,18 @@ table tr:nth-child(even) {
     }
 
     .h2-titel {
-        padding: 20px 20px 6px;
-        font-size: 29px;
-
+       font-size: 30px;
+    }
+    .h2-titel::after {
+        content: "";
+        position: absolute;
+        left: 34.6%;
+        bottom: 10px;
+        width: 80px;
+        height: 8px;
+        transform: skew(-30deg) translateX(-30%);
+        background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(24, 137, 147) 97%, rgb(16, 146, 158) 100%);
+        z-index: -1;
     }
 
     .p-tekst {
@@ -1063,18 +1077,62 @@ table tr:nth-child(even) {
         }
     }
 
+    .title_studies{
+        font-size: 30px;
+    }
+
+    .title_studies::after {
+        content: "";
+        position: absolute;
+        left: 40.6%;
+        bottom: 10px;
+        width: 80px;
+        height: 8px;
+        transform: skew(-30deg) translateX(-30%);
+        background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(24, 137, 147) 97%, rgb(16, 146, 158) 100%);
+        z-index: -1;
+    }
+
+    .studies{
+        display: none;
+    }
+
     .tabel_studies {
+        display: none;
+    }
+
+    .studies-media{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: linear-gradient(180deg, rgba(138, 138, 142, 0.2) 39%, rgba(255, 255, 255, 1) 100%);
+        text-align: center;
+        padding-top: 34px;
+        height: 93vh;
         width: 100%;
+        align-items: center;
+
+        & p{
+            font-size: 14px;
+        }
+
     }
 
-    th, td {
-        font-size: 14px;
-        padding: 5px;
+    .title_ervaring{
+        font-size: 30px;
     }
 
-    .studies {
-        padding: 0;
+    .title_ervaring::after {
+        content: "";
+        position: absolute;
+        left: 40.6%;
+        bottom: 10px;
+        width: 80px;
+        height: 8px;
+        transform: skew(-30deg) translateX(-30%);
+        background: linear-gradient(90deg, rgb(16, 116, 158) 39%, rgb(24, 137, 147) 97%, rgb(16, 146, 158) 100%);
+        z-index: -1;
     }
+
 
     .ervaring_tijdlijn {
         flex-direction: column;
@@ -1132,7 +1190,6 @@ table tr:nth-child(even) {
 
                 padding: 20px 20px 6px;
                 font-size: 29px;
-
 
         }
 
@@ -1194,6 +1251,7 @@ table tr:nth-child(even) {
 
         }
     }
+
 
 
 
