@@ -966,6 +966,25 @@ table tr:nth-child(even) {
         font-size: 80px;
         letter-spacing: 2px;
         background-size: 100%;
+        color: #020202;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(40deg, rgb(255, 255, 255), rgb(16, 146, 158), rgb(255, 255, 255)) no-repeat;
+        background-size: 86%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 6s ease-in-out forwards;
+        font-family: "monospace", sans-serif;
+    }
+
+    @keyframes shine {
+        0% {
+            background-position-x: -650%; /* start tekst */
+        }
+        150% {
+            background-position-x: 0; /* eindtekst */
+        }
     }
 
     .quote {
