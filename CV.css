@@ -940,6 +940,8 @@ table tr:nth-child(even) {
 
     * {
 
+        box-sizing: border-box;
+
         p {
             font-size: 16px;
         }
@@ -955,6 +957,8 @@ table tr:nth-child(even) {
     .top_banner {
         flex-direction: column;
         height: 95vh;
+        width: 100%;
+
     }
 
     .intro {
@@ -980,10 +984,10 @@ table tr:nth-child(even) {
 
     @keyframes shine {
         0% {
-            background-position-x: -650%; /* start tekst */
+            background-position-x: -650%;
         }
         150% {
-            background-position-x: 0; /* eindtekst */
+            background-position-x: 0;
         }
     }
 
@@ -1066,8 +1070,7 @@ table tr:nth-child(even) {
 
     .skill-container {
         grid-template-columns: 1fr;
-        width: 100%;
-        margin-left: 50px;
+        place-items: center;
 
     }
 
@@ -1084,16 +1087,38 @@ table tr:nth-child(even) {
 
 
     .talen {
-        margin-top: 64px;
-        margin-bottom: 20px;
+        display: grid;
+        grid-template:
+        "titel titel" 15%
+        "skills stars" 90% / 1fr 1fr;
+        width: 100%;
+        justify-items: center;
+        margin-top: 30px;
+
 
         & h4 {
-            font-size: 16px;
+            grid-area: titel;
+            font-size: 20px;
+            margin-right: 0;
         }
 
-        & ul li {
+        .lijst_talen  {
+            grid-area: skills;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-end; /* Zorg dat de items links beginnen */
+            padding-left: 120px;
+            margin: 13px;
             font-size: 14px;
         }
+    }
+
+     .star_images {
+        grid-area: stars;
+        padding-bottom: 20px;
+         margin:5px;
+
     }
 
     .title_studies{
