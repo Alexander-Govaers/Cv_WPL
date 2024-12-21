@@ -1125,7 +1125,7 @@ table tr:nth-child(even) {
         grid-template-columns: repeat(3, 1fr);
         background: linear-gradient(180deg, rgba(138, 138, 142, 0.2) 39%, rgba(255, 255, 255, 1) 100%);
         text-align: center;
-        padding-top: 34px;
+        padding-top: 22px;
         height: 93vh;
         width: 100%;
         align-items: center;
