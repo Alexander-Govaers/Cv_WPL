@@ -938,14 +938,21 @@ table tr:nth-child(even) {
 
     * {
 
-        font-size: 20px;
+        p {
+            font-size: 16px;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-size: 16px;
+        }
+
 
     }
 
-    /* Top banner */
+
     .top_banner {
         flex-direction: column;
-        height: auto;
+        height: 95vh;
     }
 
     .intro {
@@ -966,7 +973,7 @@ table tr:nth-child(even) {
     .p-intro {
         padding: 4px;
         margin: 20px;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 21px;
     }
 
@@ -977,7 +984,7 @@ table tr:nth-child(even) {
         margin-bottom: 20px;
     }
 
-    /* Picture Alexander */
+
     .picture-alexander {
         width: 100%;
     }
@@ -987,7 +994,7 @@ table tr:nth-child(even) {
         margin-left: 33px;
     }
 
-    /* Menu */
+
     .menu {
         flex-direction: row;
         height: 5vh;
@@ -995,21 +1002,26 @@ table tr:nth-child(even) {
 
     .navigation ul {
         flex-direction: row;
-        gap: 10px;
+        gap: 15px;
+        width: 100%;
     }
 
     .navigation li a {
-        font-size: 15px;
+        font-size: 18px;
     }
 
-    /* Container About Me */
+    #home {
+        display: none;
+    }
+
+
     .container-about-me {
         margin-top: 5%;
     }
 
     .h2-titel {
-        padding: 9px;
-        font-size: 20px;
+        padding: 20px 20px 6px;
+        font-size: 29px;
 
     }
 
@@ -1017,6 +1029,7 @@ table tr:nth-child(even) {
         font-size: 14px;
         line-height: 20px;
         padding: 13px;
+        margin-top: -16px;
     }
 
 
@@ -1033,7 +1046,7 @@ table tr:nth-child(even) {
         grid-column: 1 / -1;
         width: 80%;
 
-        & h2{
+        & h2 {
             font-size: 16px;
         }
 
@@ -1047,6 +1060,14 @@ table tr:nth-child(even) {
     .talen {
         margin-top: 64px;
         margin-bottom: 20px;
+
+        & h4 {
+            font-size: 16px;
+        }
+
+        & ul li {
+            font-size: 14px;
+        }
     }
 
 
@@ -1075,32 +1096,102 @@ table tr:nth-child(even) {
         padding: 10px;
     }
 
-    /* Contact */
-    .contact-container {
-        margin-top: 10%;
-        height: auto;
+    .tijdlijn li::after {
+        content: "";
+        width: 17px;
+        height: 17px;
+        background: #10749e;
+        border-radius: 50%;
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.39);
+        position: absolute;
+        left: -30px;
+        top: 14px;
     }
 
-    .contact-formulier {
-        flex-direction: column;
-        gap: 30px;
+        .contact-container {
+            height: 100vh;
+        }
+
+        .background-video {
+            height: 100vh;
+        }
+
+        .contact-formulier {
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .contact-title h3{
+
+                padding: 20px 20px 6px;
+                font-size: 29px;
+
+
+        }
+
+        .contact_gegevens {
+            gap: 5px;
+            background: none;
+            width: 100%;
+            height: 20%;
+
+            & h3 {
+                font-size: 18px;
+            }
+
+            & p {
+                font-size: 16px;
+            }
+
+        }
+
+        .formulier {
+            width: 90%;
+            height: 100%;
+            margin-bottom: 3%;
+
+        }
+
+        .formulier-velden {
+            width: 100%;
+
+        }
+
+        .formulier-velden input {
+            width: 68%;
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .formulier-velden textarea {
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .verzendknop {
+            font-size: 14px;
+            width: 100%;
+
+            & button {
+                width: 40%;
+            }
+
+        }
+
+        .footer_info li {
+            font-size: 10px;
+
+        }
     }
 
-    .contact_gegevens,
-    .formulier {
-        width: 90%;
-        height: auto;
-        padding: 10px;
-    }
 
-    .contact_gegevens {
-        border-radius: 10px;
-    }
-
-    .contact_title {
-        font-size: 24px;
-    }
-}
 
 
 
