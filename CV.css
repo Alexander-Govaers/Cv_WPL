@@ -998,16 +998,22 @@ table tr:nth-child(even) {
     .menu {
         flex-direction: row;
         height: 5vh;
-    }
 
-    .navigation ul {
-        flex-direction: row;
-        gap: 15px;
-        width: 100%;
+        .navigation{
+            display: flex;
+            width: 100%;
+        }
+
+        & ul {
+            flex-direction: row;
+            gap: 15px;
+            width: 100%;
+            margin-left: -11px;
+        }
     }
 
     .navigation li a {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     #home {
