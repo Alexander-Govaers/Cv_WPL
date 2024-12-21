@@ -1214,7 +1214,7 @@ table tr:nth-child(even) {
     }
 
         .contact-container {
-            height: 100vh;
+            height: 93vh;
             margin: 0;
         }
 
@@ -1255,7 +1255,6 @@ table tr:nth-child(even) {
 
         .formulier {
             width: 90%;
-            height: 100%;
             margin-bottom: 3%;
 
         }
