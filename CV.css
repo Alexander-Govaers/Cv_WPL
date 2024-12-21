@@ -984,20 +984,14 @@ table tr:nth-child(even) {
         margin-bottom: 20px;
     }
 
-
-    .picture-alexander {
+    .picture-alexander{
+        display: flex;
         width: 100%;
-    }
-
-    .picture {
-        width: 80%;
-        margin-left: 33px;
     }
 
 
     .menu {
-        flex-direction: row;
-        height: 5vh;
+        height: 6vh;
 
         .navigation{
             display: flex;
@@ -1005,8 +999,7 @@ table tr:nth-child(even) {
         }
 
         & ul {
-            flex-direction: row;
-            gap: 15px;
+            gap: 14px;
             width: 100%;
             margin-left: -11px;
         }
@@ -1019,7 +1012,6 @@ table tr:nth-child(even) {
     #home {
         display: none;
     }
-
 
     .container-about-me {
         margin-top: 5%;
@@ -1044,7 +1036,6 @@ table tr:nth-child(even) {
         width: 100%;
         margin-left: 50px;
 
-
     }
 
     .it-skills,
@@ -1058,10 +1049,6 @@ table tr:nth-child(even) {
 
     }
 
-    .bar,
-    .bar-right {
-        width: 80%;
-    }
 
     .talen {
         margin-top: 64px;
@@ -1076,17 +1063,18 @@ table tr:nth-child(even) {
         }
     }
 
-
     .tabel_studies {
         width: 100%;
     }
 
-    th,
-    td {
+    th, td {
         font-size: 14px;
         padding: 5px;
     }
 
+    .studies {
+        padding: 0;
+    }
 
     .ervaring_tijdlijn {
         flex-direction: column;
